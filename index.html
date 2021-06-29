@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>The travel Advisor</title>
+
+  <!-- Script Code for Map Image-->
+  <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body>
+
+  <!-- Static Container on Window Load --- remains the Same -->
+  <div class="static-container">
+
+    <h1>The Ultimate travel Guide</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+      ipsam ratione iste consequuntur velit doloribus. Aut deserunt laborum
+      repellat sint recusandae suscipit quaerat illo aliquam placeat. Debitis
+      ratione eum deleniti. Eligendi repellendus, vero itaque similique
+      laboriosam sit autem ipsa esse consequatur unde facilis repudiandae
+      nostrum praesentium quisquam at voluptate adipisci laudantium aliquid
+      vitae. Ducimus obcaecati iste similique sit nesciunt. Beatae?
+    </p>
+    <h3>Please Select the Country</h3>
+    <select id="selectOptions">
+      <option class="optionList">Select the Country</option>
+    </select>
+    <br />
+    <button id="clickButton">Show Country</button><br />
+  </div>
+
+
+  <!-- This Container is used to display Data using JavaScript DOM Manipulation-->
+
+  <div class="dynamic-container showDomData hide">
+    <div class="advise">
+      <p class='advise-text'> </p>
+      <a href="" class='advise-link'>More Info</a>
+    </div>
+
+    <img id="countryFlag" />
+    <button class="viewMap">View Map</button>
+    <button class="currency-converter-btn">Currency Converter</button>
+    <button class='weather'>Weather</button>
+    <div id="countryTitle"></div>
+
+    <!-- Page 1 Data Here -->
+    <div class="page1">
+      <div id="countryLanguage" class="data-style"></div>
+
+      <div class="currency data-style">
+        Currency Name :
+        <p id="countryCurrency"></p>
+      </div>
+
+      <div class="time data-style">
+        Time Zone :
+        <p id="timeZone"></p>
+      </div>
+
+      <div class="data-style neighborCountries">
+        Neighbor Countries :
+        <p id="neighborCountries"></p>
+      </div>
+    </div>
+
+
+    <!-- Page 2 Data Starts Here-->
+    <div class="page2 hide">
+      <div class="telephone-container data-style">
+        Emergency Numbers :
+        <p id="telephone"></p>
+      </div>
+
+      <div class=" electricity-container data-style">
+        Electricity :
+        <p id="electricity"></p>
+      </div>
+    </div>
+    <button class="next-btn">Next Page</button>
+    <button class="previous-btn hide">Previous Page</button>
+    <button class="vaccination-btn">Vaccination Advise</button>
+  </div>
+
+  <!--Vaccination Advise Container-->
+  <div class="vaccinations-container hide">
+    <h3>Vaccinations Advice<i class="fas fa-window-close close-btn"></i></h3>
+    <p id="countryVaccinations"></p>
+  </div>
+
+  <div id="mapContainer" class="hide ">
+    <h3><i class="fas fa-times mapCloseButton"></i></h3>
+    <div id="mapImage"></div>
+  </div>
+
+  <div class="currency-container hide">
+    <h3>Convert Currency<i class="fas fa-times currency-close-button"></i></h3><br>
+    <input type="text" placeholder="Enter Amount" class="input-amount"> <br>
+    <select class="currency-list"></select> <br>
+    <div class="currency-result"></div><br>
+    <button class="convert-button">Convert</button>
+  </div>
+
+  <div id="weatherContainer" class="hide">
+    <h3><i class="fas fa-times weather-close-button"></i></h3>
+    <div id="weatherData"></div>
+  </div>
+
+
+  </div>
+
+  <script>
+      // Initialize the platform object:
+
+  </script>
+  <script type="module" src="./init App.js/initialize.js"></script>
+
+</body>
+</html>
