@@ -1,12 +1,13 @@
 import { weatherContainer } from '../constants.js';
 import increaseBackgroundOpacity from '../utilities/increaseBackgroundOpacity.js';
 import decreaseBackgroundOpacity from '../utilities/decreaseBackgroundOpacity.js';
+import fetchApi from '../fetchApi.js';
 
 async function showWeatherDivision(countryName) {
   weatherContainer.classList.remove('hide');
   decreaseBackgroundOpacity();
 
-  const weatherResponse = await fetch(
+  const weatherResponse = await fetchApi(
     `http://api.weatherapi.com/v1/forecast.json?key=4b9b98b51c3f436e8a574149212606&q=${countryName.split(
       '_',
     )}&days=08&aqi=no&alerts=no`,
