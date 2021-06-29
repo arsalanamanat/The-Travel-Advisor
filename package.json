@@ -1,0 +1,20 @@
+{
+  "name": "the-travel-advisor",
+  "version": "1.0.0",
+  "description": "In this Repository you will find information about Countries Weather - Currency - and all the important information neede to travel",
+  "main": "initialize.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arsalanamanat/The-Travel-Advisor.git"
+  },
+  "author": "Arslan Amanat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arsalanamanat/The-Travel-Advisor/issues"
+  },
+  "homepage": "https://github.com/arsalanamanat/The-Travel-Advisor#readme"
+}

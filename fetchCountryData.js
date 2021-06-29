@@ -15,16 +15,16 @@ import goToPreviousPage from './eventListeners/goToPreviousPage.js';
 import showWeatherDivision from './eventListeners/showWeatherDivision.js';
 import fetchApi from './FetchAPi.js';
 import getCurrencyConversion from './eventListeners/getCurrencyConcersion.js';
-import showTheMap from './showTheMap.js';
-import CountryFlagAndName from './countryFlagAndName.js';
-import displayLanguages from './displayLanguages.js';
-import displayCurrencyAndCode from './displayCurrencyAndCode.js';
-import displayCoronaAdvise from './DisplayCoronaAdvise.js';
-import displayTimeZone from './displayTimeZone.js';
-import displayNeighborCountries from './displayNeighborCountries.js';
-import displayVaccinationDivision from './displayVaccinationDivision.js';
-import displayTelephoneNumbers from './displayTelephoneNumbers.js';
-import displayElectricity from './displayElectricity.js';
+import showTheMap from './displayFunctions/showTheMap.js';
+import CountryFlagAndName from './displayFunctions/countryFlagAndName.js';
+import displayLanguages from './displayFunctions/displayLanguages.js';
+import displayCurrencyAndCode from './displayFunctions/displayCurrencyAndCode.js';
+import displayCoronaAdvise from './displayFunctions/DisplayCoronaAdvise.js';
+import displayTimeZone from './displayFunctions/displayTimeZone.js';
+import displayNeighborCountries from './displayFunctions/displayNeighborCountries.js';
+import displayVaccinationDivision from './displayFunctions/displayVaccinationDivision.js';
+import displayTelephoneNumbers from './displayFunctions/displayTelephoneNumbers.js';
+import displayElectricity from './displayFunctions/displayElectricity.js';
 
 async function fetchCountryData(countryName) {
   //fetching individual Country data and converting into json format

@@ -3,8 +3,8 @@ import {
   vaccinationBtn,
   vaccinationCloseBtn,
 } from '../constants.js';
-import closeVaccinationWindow from './eventListeners/closeVaccinationWindow.js';
-import showVaccinationWindow from './eventListeners/showVaccinationWindow.js';
+import closeVaccinationWindow from '../eventListeners/showVaccinationWindow.js';
+import showVaccinationWindow from '../eventListeners/showVaccinationWindow.js';
 
 function displayVaccinationDivision(countryJsonData) {
   countryVaccinationsElement.innerHTML = '';
