@@ -14,7 +14,7 @@ import goToNextPage from './eventListeners/goToNextPage.js';
 import goToPreviousPage from './eventListeners/goToPreviousPage.js';
 import showWeatherDivision from './eventListeners/showWeatherDivision.js';
 import fetchApi from './FetchAPi.js';
-import getCurrencyConversion from './eventListeners/getCurrencyConcersion.js';
+import getCurrencyConversion from './eventListeners/getCurrencyConversion.js';
 import showTheMap from './displayFunctions/showTheMap.js';
 import CountryFlagAndName from './displayFunctions/countryFlagAndName.js';
 import displayLanguages from './displayFunctions/displayLanguages.js';
