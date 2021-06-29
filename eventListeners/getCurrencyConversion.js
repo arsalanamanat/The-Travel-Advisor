@@ -5,10 +5,10 @@ import {
   currencySelectionList,
   inputAmount,
 } from '../constants.js';
-import lessTheOpacity from '../utilities/lessTheOpacity.js';
+import decreaseBackgroundOpacity from '../utilities/decreaseBackgroundOpacity.js';
 
 function getCurrencyConversion(countryJsonData) {
-  lessTheOpacity();
+  decreaseBackgroundOpacity();
   currencyContainer.classList.remove('hide');
   const currencyList = countryJsonData.currency.compare;
   inputAmount.value = '';

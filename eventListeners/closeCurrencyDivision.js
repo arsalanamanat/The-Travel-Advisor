@@ -1,9 +1,9 @@
 import { currencyContainer } from '../constants.js';
-import increaseTheOpacity from '../utilities/increaseTheOpacity.js';
+import increaseBackgroundOpacity from '../utilities/increaseBackgroundOpacity.js';
 
 function closeCurrencyDivision() {
   currencyContainer.classList.add('hide');
-  increaseTheOpacity();
+  increaseBackgroundOpacity();
 }
 
 export default closeCurrencyDivision;

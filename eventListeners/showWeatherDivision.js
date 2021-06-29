@@ -1,10 +1,10 @@
 import { weatherContainer } from '../constants.js';
-import increaseTheOpacity from '../utilities/increaseTheOpacity.js';
-import lessTheOpacity from '../utilities/lessTheOpacity.js';
+import increaseBackgroundOpacity from '../utilities/increaseBackgroundOpacity.js';
+import decreaseBackgroundOpacity from '../utilities/decreaseBackgroundOpacity.js';
 
 async function showWeatherDivision(countryName) {
   weatherContainer.classList.remove('hide');
-  lessTheOpacity();
+  decreaseBackgroundOpacity();
 
   const weatherResponse = await fetch(
     `http://api.weatherapi.com/v1/forecast.json?key=4b9b98b51c3f436e8a574149212606&q=${countryName.split(
@@ -53,7 +53,7 @@ async function showWeatherDivision(countryName) {
 
   weatherCloseButton.addEventListener('click', () => {
     weatherContainer.classList.add('hide');
-    increaseTheOpacity();
+    increaseBackgroundOpacity();
   });
 }
 

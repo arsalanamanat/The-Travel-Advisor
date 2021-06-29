@@ -1,9 +1,9 @@
 import { vaccinationContainer } from '../constants.js';
-import lessTheOpacity from '../utilities/lessTheOpacity.js';
+import decreaseBackgroundOpacity from '../utilities/decreaseBackgroundOpacity.js';
 
 function showVaccinationWindow() {
   vaccinationContainer.classList.remove('hide');
-  lessTheOpacity();
+  decreaseBackgroundOpacity();
 }
 
 export default showVaccinationWindow;

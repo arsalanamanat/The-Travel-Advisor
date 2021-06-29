@@ -1,8 +1,8 @@
 import { mapContainer, mapElement } from '../constants.js';
-import lessTheOpacity from '../utilities/lessTheOpacity.js';
+import decreaseBackgroundOpacity from '../utilities/decreaseBackgroundOpacity.js';
 
 function showTheMap(countryJsonData) {
-  lessTheOpacity();
+  decreaseBackgroundOpacity();
   mapElement.innerText = '';
   mapContainer.classList.remove('hide');
 

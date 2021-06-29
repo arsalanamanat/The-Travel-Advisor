@@ -1,8 +1,8 @@
 import { dynamicContainer, staticContainer } from '../constants.js';
 
-function increaseTheOpacity() {
+function increaseBackgroundOpacity() {
   dynamicContainer.style.opacity = 1;
   staticContainer.style.opacity = 1;
 }
 
-export default increaseTheOpacity;
+export default increaseBackgroundOpacity;

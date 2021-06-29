@@ -1,9 +1,9 @@
 import { mapContainer } from '../constants.js';
-import increaseTheOpacity from '../utilities/increaseTheOpacity.js';
+import increaseBackgroundOpacity from '../utilities/increaseBackgroundOpacity.js';
 
 function closeMap() {
   mapContainer.classList.add('hide');
-  increaseTheOpacity();
+  increaseBackgroundOpacity();
 }
 
 export default closeMap;
