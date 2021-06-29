@@ -1,0 +1,475 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url('./gradientpic1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: lightblue;
+}
+
+.hide {
+  display: none;
+}
+
+.static-container {
+  padding: 20px;
+  color: white;
+  position: fixed;
+  top: 30%;
+  left: 2.5%;
+  width: 40%;
+  text-align: center;
+  border-radius: 10px;
+}
+.static-container h1 {
+  font-size: 3.5rem;
+}
+.static-container p {
+  padding: 15px;
+  text-align: justify;
+}
+
+.static-container h3 {
+  margin-top: 10px;
+}
+
+#selectOptions {
+  margin-top: 15px;
+  font-weight: bold;
+  height: 2rem;
+  border-radius: 15px;
+  width: 20rem;
+  background-color: rgb(5, 59, 66);
+  color: white;
+  padding-left: 20px;
+}
+
+#selectOptions:focus {
+  border-radius: 15px;
+}
+
+#selectOptions::-webkit-scrollbar {
+  background-color: rgba(37, 93, 97, 0.753);
+  border-radius: 10px;
+}
+#selectOptions::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+}
+
+#clickButton {
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: rgb(5, 59, 66);
+  border: 1px solid white;
+  color: white;
+  width: 150px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+#clickButton:hover {
+  background-color: black;
+  color: white;
+}
+
+.dynamic-container {
+  position: fixed;
+  padding: 20px;
+  top: 10%;
+  right: 20px;
+  height: 80vh;
+  width: 50vw;
+  color: white;
+  border-left: solid 2px white;
+  animation-duration: 2s;
+  animation-name: showself;
+}
+
+.advise {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  position: fixed;
+  right: 30px;
+  top: 15px;
+}
+
+.advise-link {
+  margin-left: 15px;
+}
+
+.page2 {
+  animation-duration: 2s;
+  animation-name: showself;
+}
+
+@keyframes showself {
+  from {
+    opacity: 0;
+    transition: ease-in;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dynamic-container img {
+  width: 25%;
+}
+
+#mapContainer {
+  border-radius: 50px;
+  width: 50vw;
+  height: 65vh;
+  position: fixed;
+  top: 20%;
+  left: 25%;
+  transition: ease-in-out 1s;
+  animation-duration: 1s;
+  animation-name: openbox;
+}
+
+#mapImage {
+  display: block;
+  position: relative;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+}
+
+#mapContainer h3 {
+  padding: 0px;
+  text-align: right;
+  color: white;
+  font-size: 2rem;
+}
+
+.viewMap {
+  cursor: pointer;
+  float: right;
+  margin-right: 10px;
+  background-color: white(245, 14, 14);
+  border: 1px solid white;
+  color: black;
+  width: 150px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-radius: 15px;
+}
+
+.weather {
+  position: relative;
+  cursor: pointer;
+  float: right;
+  margin-right: 10px;
+  background-color: skyblue;
+  border: 1px solid skyBlue;
+  color: black;
+  width: 150px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-radius: 15px;
+}
+.viewMap:hover,
+.weather:hover {
+  background-color: black;
+  color: white;
+}
+
+.dynamic-container p {
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+#countryTitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.data-style {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 10px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  background: linear-gradient(to left, rgb(5, 5, 5), rgba(5, 66, 136, 0.247));
+}
+
+#countryLanguage li {
+  list-style: none;
+  font-size: 0.9rem;
+  font-weight: 50;
+}
+
+.next-btn,
+.previous-btn {
+  cursor: pointer;
+  float: right;
+  margin-right: 10px;
+  margin-top: 20px;
+  background-color: rgb(75, 3, 3);
+  border: 1px solid white;
+  color: white;
+  width: 150px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-radius: 15px;
+}
+
+.vaccination-btn {
+  cursor: pointer;
+  float: left;
+  margin-right: 10px;
+  margin-top: 20px;
+  background-color: rgb(245, 14, 14);
+  border: 1px solid white;
+  color: white;
+  width: 150px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-radius: 15px;
+}
+.vaccinations-container {
+  background-color: rgb(5, 59, 66);
+  border-radius: 20px;
+  padding: 20px;
+  width: 50vw;
+  height: 65vh;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  transition: ease-in-out 1s;
+  animation-duration: 1s;
+  animation-name: openbox;
+}
+
+@keyframes openbox {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.vaccinations-container h3 {
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+.vaccinations-container i {
+  float: right;
+}
+
+#countryVaccinations {
+  list-style: none;
+  color: white;
+  width: 100%;
+  height: 80%;
+  font-size: 0.9rem;
+  text-align: justify;
+  overflow: hidden;
+  padding: 5px;
+}
+.vaccination-name {
+  padding-top: 5px;
+  font-size: 1.2rem;
+  border-top: 1px dashed white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.currency-container {
+  position: fixed;
+  background-color: rgb(5, 59, 66);
+  position: fixed;
+  left: 25%;
+  top: 25%;
+  width: 50vw;
+  height: 50vh;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  animation-duration: 1s;
+  animation-name: openbox;
+}
+
+.currency-container h3 {
+  padding: 25px;
+  font-size: 2rem;
+  color: white;
+}
+
+.currency-container i {
+  float: right;
+}
+
+.input-amount {
+  background-color: white;
+  padding: 10px;
+  width: 350px;
+  height: 40px;
+  border: 0px;
+  padding: 15px;
+  color: grey;
+  font-size: 1.2rem;
+  border-radius: 15px;
+}
+
+::placeholder {
+  color: grey;
+  padding: 10px;
+}
+
+.currency-list {
+  background-color: rgb(37, 93, 97);
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 350px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.currency-list::-webkit-scrollbar {
+  background-color: rgba(37, 93, 97, 0.753);
+  border-radius: 10px;
+}
+.currency-list::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.currency-result {
+  text-align: left;
+  background-color: white;
+  padding: 10px;
+  margin: 0 auto;
+  width: 350px;
+  height: 40px;
+  border: 0px;
+  color: grey;
+  font-size: 1.2rem;
+  border-radius: 15px;
+}
+
+.currency-converter-btn {
+  cursor: pointer;
+  float: right;
+  margin-right: 10px;
+  background-color: white(245, 14, 14);
+  border: 1px solid white;
+  color: black;
+  width: 150px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-radius: 15px;
+}
+
+.currency-converter-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.convert-button {
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: rgb(5, 37, 43);
+  border: 1px solid rgb(255, 255, 255);
+  color: grey;
+  width: 150px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-radius: 15px;
+}
+
+.convert-button:hover {
+  background-color: black;
+  color: white;
+}
+
+#weatherContainer {
+  position: fixed;
+  background-color: rgb(5, 59, 66);
+  position: fixed;
+  left: 25%;
+  top: 25%;
+  width: 50vw;
+  height: 50vh;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  animation-duration: 1s;
+  animation-name: openbox;
+}
+
+.weather-country-name {
+  margin-top: 05px;
+}
+
+.weather-icon {
+  width: 20%;
+  margin-top: 20px;
+}
+
+.weather-temperature {
+  margin-top: 20px;
+}
+
+.weather-close-button {
+  float: right;
+}
+
+.next-btn:hover,
+.previous-btn:hover,
+.vaccination-btn:hover {
+  background-color: black;
+}
+
+.err-division {
+  position: fixed;
+  background-color: red;
+  left: 25%;
+  top: 35%;
+  width: 50vw;
+  height: 20vh;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-size: 1.5rem;
+  animation-duration: 1s;
+  animation-name: openbox;
+}
