@@ -2,7 +2,7 @@
 
 During my boot camp with HackYourFuture- Amsterdam. I was assigned to make a project for the Browser's Module using Javascript and DOM . After thinking alot about it i came up with the idea to make an app where users get useful information about countries before planning their trip . In this App the user can find most of the data that is good to know about the country. In this project i did not got the time to make it responsive but in future i have plans to make it responsive and add some more interesting features. 
 
-![image](https://user-images.githubusercontent.com/78694077/134818006-1f47e36a-47e6-4d04-9751-d8bca9c8405a.png)
+![image](https://user-images.githubusercontent.com/78694077/135070706-c443b64e-a610-447a-8dd4-c5b46f45ad68.png)
 
 
 ### In this app you can find info about.
