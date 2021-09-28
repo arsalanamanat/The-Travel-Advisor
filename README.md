@@ -16,7 +16,7 @@ During my boot camp with HackYourFuture- Amsterdam. I was assigned to make a pro
 * Vaccination Measures!
 
 
-![image](https://user-images.githubusercontent.com/78694077/134818030-8be3eca9-fee5-40c2-87a8-4d75e29474b1.png)
+![image](https://user-images.githubusercontent.com/78694077/135070818-3d466865-cd21-4227-b1c2-8447277cc08f.png)
 
 
 ## Currency Conversion 
